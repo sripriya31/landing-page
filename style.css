@@ -1,0 +1,72 @@
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background image for the entire page */
+body {
+    background-image: url('background.jpg'); /* Replace with your image file */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif; /* Use your desired imported font */
+    font-size: 16px;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for navbar */
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Ensure the navbar stays above the content */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    position: relative; /* Add relative positioning for the shadow effect */
+}
+
+/* Styles for Scrolled Navbar */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background color when scrolled */
+}
+
+/* Styles for Hovered Links */
+.navbar a:hover {
+    color: #e0561f; /* Change the font color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.page-content {
+    text-align: center; /* Center-align text */
+    margin-top: 300px; /* Adjust the space from the top */
+    margin-bottom: 40px; /* Add margin to move content down */
+    z-index: 1; /* Ensure the content stays behind the navbar */
+}
+
+.page-content h1 {
+    font-family: cursive; /* Use your desired custom font */
+    font-size: 100px; /* Adjust font size */
+    color: #831515; /* Text color */
+    text-shadow: 2px 2px 4px rgb(247, 245, 245); /* Add a subtle text shadow */
+    height:60px;
+}
